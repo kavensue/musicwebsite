@@ -1,11 +1,16 @@
 spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/websidemusic?characterEncoding=utf8
     driverClassName: com.mysql.jdbc.Driver
-     username: druid
-     password: 123456
+    username: druid
+    password: 123456
   jpa:
     database: MySQL
     show-sql: true
     hibernate:
       naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
